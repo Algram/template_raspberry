@@ -79,31 +79,57 @@ p {
 
 .imageBox {
   display: inline-block;
-  position: relative;
-  padding-right: 30px;
+  margin-right: 20px;
   width: 300px;
   height: 300px;
+  position: relative;
+  overflow: hidden;
 }
 
 .imageBox img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
 }
 
 .imageBox:hover img {
-  opacity: 0.5;
+  height: 50%;
+  -webkit-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	transition: all .4s ease;
 }
 
-.imageBox:hover a {
-  display: inline-block;
+.imageBox:hover .text {
+  height: 50%;
+  margin-top: 50%;
+  opacity: 1;
+  -webkit-transition: margin-top .4s ease;
+  -o-transition: margin-top .4s ease;
+  transition: margin-top .4s ease;
 }
 
-.imageBox a {
-  display: none;
+.imageBox .text {
+  background: rgb(50,50,50);
+  color: #ffffff;
+  opacity: 0;
+  margin-top: 100%;
   position: absolute;
-  bottom: 140px;
-  left: 110px;
+  padding: 0 20px;
+}
+
+.imageBox .text a {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 4px solid rgb(200,40,60);
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.imageBox .text a:hover {
+  color: rgb(160,160,160);
 }
 
 form {
