@@ -1,12 +1,8 @@
 document.getElementById('teaser').getElementsByTagName('span')[0].innerText = "";
 
 setTimeout(function() {
-  typeText('Raspberry');
+  addLetters('Raspberry');
 }, 3000)
-
-function typeText(text) {
-  addLetters(text);
-}
 
 var i = 0;
 function addLetters(text) {

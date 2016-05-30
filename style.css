@@ -10,7 +10,6 @@ body {
 .clearfix {
   overflow: auto;
   content:"";
-  display:block;
   clear:both;
 }
 
