@@ -15,8 +15,8 @@ body {
 
 #header {
   height: 550px;
-  background: url('images/header-bg.jpg') bottom no-repeat;
-  background-size: 100%;
+  background: url('images/header-bg.jpg') top no-repeat;
+  background-size: cover;
 }
 
 #logo {
@@ -48,6 +48,7 @@ body {
 #teaser {
   margin-top: 20px;
   font-size: 48px;
+  line-height: 64px;
   text-align: center;
 }
 
@@ -57,7 +58,7 @@ body {
 }
 
 #content {
-  width: 55%;
+  width: 1024px;
   margin: 0 auto;
 }
 
